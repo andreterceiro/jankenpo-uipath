@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Jankenpo - random computer chioce</title>
+        <meta charset="utf-8" />
+        <script>
+            function writeComputerChoice() {
+                const PAPER = 0;
+                const ROCK = 1;
+                const SCISSORS = 2;
+
+                let randomComputerChoice = Math.floor((Math.random() * 10))
+                randomComputerChoice = randomComputerChoice % 3;
+                
+                if (randomComputerChoice == 0) {
+                    document.getElementById("randomComputerChoice").innerHTML = "PAPER";
+                } else if (randomComputerChoice == 1) {
+                    document.getElementById("randomComputerChoice").innerHTML = "ROCK";
+                } else {
+                    document.getElementById("randomComputerChoice").innerHTML = "SCISSORS";
+                } 
+            }
+        </script>
+    </head>
+    <body onload="writeComputerChoice()">
+        <div id="randomComputerChoice"></div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Jankenpo - options</title>
+        <meta charset="utf-8" />
+        <script>
+            function updateTimer() {
+                let counter = 10;
+
+                let interval = window.setInterval(
+                    function() {
+                        document.getElementById("timerCounter").innerHTML = counter;
+                        if (counter == 0) {
+                            document.getElementById("timerMessage").innerHTML = "Time to select a option ended";
+                            clearInterval(interval);
+                        }
+                        counter = counter - 1;
+                    },
+                    1000
+                );
+            }
+        </script>
+
+    </head>
+    <body onload="updateTimer()">
+        <select name="choices" id="choices">
+            <option value="PAPER">PAPER</option>
+            <option value="ROCK">ROCK</option>
+            <option value="SCISSORS">SCISSORS</option>
+        </select>
+
+        <hr />
+
+        <div id="timerMessage">
+            <span>You have <span id="timerCounter">10</span> seconds to select an option</span>
+    </body>
+</html>
