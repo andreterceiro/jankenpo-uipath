@@ -1,6 +1,6 @@
 # jankenpo-uipath
 
-With UI PATH you can build a programming project using the "low code" idea, putting the things in boxes. You still continue needing to have the logic mind, you only willn't insert text of code. Istead of this, you will use boxes.
+With UI PATH you can build a programming project using the "low code" idea, putting the things in boxes. You still continue needing to have the logic mind, you only willn't insert text of code. Instead of this, you will use boxes.
 
 To use this project you will need to import the project in UI PATH project manager page, as you can see in the image bellow:
 
